@@ -1,0 +1,40 @@
+src/
+│
+├── assets/                # images, icons
+│
+├── components/            # reusable UI components
+│   ├── ui/                # buttons, cards, inputs
+│   ├── layout/            # navbar, footer, container
+│
+├── sections/              # landing page sections
+│   ├── Hero/
+│   ├── Features/
+│   ├── About/
+│   ├── Testimonials/
+│   ├── Pricing/
+│   ├── CTA/
+│   ├── Footer/
+│
+├── layouts/               # page layouts
+│   └── MainLayout.tsx
+│
+├── pages/                 # routes/pages
+│   └── Home.tsx
+│
+├── theme/                 # THEME SYSTEM (important)
+│   ├── index.ts
+│   ├── light.ts
+│   ├── dark.ts
+│   └── ThemeProvider.tsx
+│
+├── hooks/                 # custom hooks
+│   └── useTheme.ts
+│
+├── styles/                # global styles
+│   └── globals.css
+│
+├── config/                # per-client customization
+│   └── siteConfig.ts
+│
+├── App.tsx
+├── main.tsx
