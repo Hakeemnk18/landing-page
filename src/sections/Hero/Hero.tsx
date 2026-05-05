@@ -88,14 +88,20 @@ export const Hero = () => {
           {/* Stats Bar */}
           <motion.div
             variants={itemVariants}
-            className="mt-16 pt-8 border-t border-theme-muted/20 w-full grid grid-cols-3 gap-4"
+            // Reduced gap on mobile (gap-2), standard gap on desktop (md:gap-4)
+            className="mt-16 mb-10 pt-8 border-t border-theme-muted/20 w-full grid grid-cols-3 gap-2 md:gap-4"
           >
             {hero.stats.map((stat, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <span className="text-3xl font-bold text-theme-text">
+              <div
+                key={index}
+                className="flex flex-col items-center text-center"
+              >
+                {/* Scaled text: xl on mobile, 3xl on desktop. Added whitespace-nowrap to prevent awkward line breaks */}
+                <span className="text-xl sm:text-2xl md:text-3xl font-bold text-theme-text whitespace-nowrap">
                   {stat.value}
                 </span>
-                <span className="text-sm text-theme-muted mt-1 uppercase tracking-wider font-medium">
+                {/* Scaled text: tiny on mobile, small on desktop */}
+                <span className="text-[10px] sm:text-xs md:text-sm text-theme-muted mt-1 md:mt-2 uppercase tracking-wider font-medium">
                   {stat.label}
                 </span>
               </div>

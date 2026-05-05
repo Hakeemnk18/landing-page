@@ -9,6 +9,7 @@ src/
 ├── sections/              # landing page sections
 │   ├── Hero/
 │   ├── Features/
+│   ├── Portfolio/
 │   ├── About/
 │   ├── Testimonials/
 │   ├── Pricing/
