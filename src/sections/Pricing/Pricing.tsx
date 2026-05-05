@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, type Variants } from "framer-motion";
-import { CheckCircle2, CreditCard, Sparkles } from "lucide-react";
+import { CheckCircle2, CreditCard } from "lucide-react";
 import { siteConfig } from "../../config/siteConfig";
 
 // Scroll animation variants
